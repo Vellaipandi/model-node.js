@@ -1,0 +1,34 @@
+body {
+  
+    background: linear-gradient(to bottom, #c85454, #44a8d0); /* Example gradient from light gray to slightly darker gray */
+  
+  background-color: #bc5858; /* Classic light gray background */
+  font-family: Arial, sans-serif; /* Classic font choice */
+}
+
+.centered {
+  margin-top: 100px; /* Center vertically */
+  text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 1.5rem; /* Slightly smaller font size */
+  color: #333; /* Dark gray text color */
+  background-color: #f8f8f8; /* Light gray background for better contrast */
+  padding: 10px; /* Add padding for better readability */
+  border: 1px solid #ccc; /* Add a border for a classic look */
+  border-radius: 5px; /* Add border radius for smoother edges */
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(0); /* Initial position */
+  }
+  to {
+    transform: translateX(100px); /* Final position */
+  }
+}
+
+#rvsCas {
+  animation: moveRight 2s linear infinite; /* Apply animation */
+}

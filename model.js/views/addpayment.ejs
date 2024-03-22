@@ -1,0 +1,59 @@
+<%- include('partials/header') %>
+<div class="container mt-5">
+  <h1 class="text-center">Add Fine</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <form action="/add" method="POST">
+            <div class="form-group">
+              <label for="regno">Registration Number</label>
+              <input type="text" class="form-control" id="regno" name="regno" required>
+            </div>
+            <div class="form-group">
+              <label for="studentname">Student Name</label>
+              <input type="text" class="form-control" id="studentname" name="studentname" required>
+            </div>
+            <div class="form-group">
+              <label for="course">Course</label>
+              <input type="text" class="form-control" id="course" name="course" required>
+            </div>
+            <div class="form-group">
+              <label for="batch">Batch</label>
+              <input type="text" class="form-control" id="batch" name="batch" required>
+            </div>
+            <div class="form-group">
+              <label for="date">Date of Payment</label>
+              <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="paymentby">Payment By</label>
+              <input type="text" class="form-control" id="paymentby" name="paymentby" required>
+            </div>
+            <div class="form-group">
+              <label for="paymentfor">Payment For</label>
+              <input type="text" class="form-control" id="paymentfor" name="paymentfor" required>
+            </div>
+            <div class="form-group">
+              <label for="punishments">Punishments</label>
+              <select id="punishments" class="form-control" name="punishments" required>
+                <option value="dresscode">Informal Dress code - Rs. 15</option>
+                <option value="assignment">Late Submission of Assignment - Rs.10</option>
+                <option value="latecomers">Latecomers - Rs.50</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="amount">Paid Amount</label>
+              <input type="number" class="form-control" id="amount" name="amount" required>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Register</button>
+              <a href="/cashierhome" class="btn btn-secondary ml-2">Back</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
